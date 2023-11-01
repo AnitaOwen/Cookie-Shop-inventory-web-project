@@ -12,19 +12,42 @@ header {
     color: #f7f7f7;
 }
 
+/* section {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    box-sizing: border-box;
+} */
+
 header h1 {
     text-align: center;
 }
 
+li img {
+    height: 90px;
+}
 
-
+.new-cookie-form label {
+  box-sizing: border-box;
+  display: block;
+  margin: 5px 0;
+  width: 50%;
+}
 
 
 .new-cookie-form {
     border:2px solid #a80505;
     border-radius: 5px;
-    /* padding: 25px 0; */
-    /* width: 40%; */
+    width: 40%;
+}
+
+.cookies ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+.cookies li {
+    border: 2px solid green;
 }
 
 
