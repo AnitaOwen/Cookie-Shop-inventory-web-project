@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Shop Inventory</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./scripts/main.js"></script>
+</head>
+<header>
+    <h1>Cookie Shop Inventory <span class="cookie-count">(Cookies: 1)</span></h1>
+</header>
+<body>
+    <main>
+        <section class="new-cookie-form">
+          <h2>Create a New Cookie</h2>
+          <form id="new-cookie">
+            <label for="name">Cookie Name 
+                <span class="required">*</span>
+                <input id="name" name="name" type="text" required/>
+            </label>
+            
+            <label for="price">Price In Dollars (per dozen)
+                <input id="price" name="price" type="number" required />
+            </label>
+  
+            <label for="in-stock">In Stock
+                <input type="radio" id="in-stock-yes" name="in-stock" value="yes" required />
+                <input type="radio" id="out-of-stock" name="in-stock" value="no" required />
+            </label>
+
+            <label for="contains-nuts">In Stock
+                <input type="radio" id="contains-nuts" name="contains-nuts" value="yes" required />
+                <input type="radio" id="nut-free" name="contains-nuts" value="no" required />
+            </label>
+
+            <form id="new-cookie">
+            <label for="name">Cookie Name 
+                <span class="required">*</span>
+                <input id="name" name="name" type="text" required/>
+            </label>
+            
+            <label for="price">Price In Dollars (per dozen)
+                <input id="price" name="price" type="number" required />
+            </label>
+  
+            <label for="in-stock">In Stock
+                <input type="radio" id="in-stock" name="in-stock" value="yes" required />
+                <input type="radio" id="out-of-stock" name="in-stock" value="no" required />
+            </label>
+
+            <label for="contains-nuts">In Stock
+                <input type="radio" id="contains-nuts" name="contains-nuts" value="yes" required />
+                <input type="radio" id="nut-free" name="contains-nuts" value="no" required />
+            </label>
+
+            <label for="is-vegan">In Stock
+                <input type="radio" id="is-vegan" name="is-vegan" value="yes" required />
+                <input type="radio" id="is-vegan-no" name="is-vegan" value="no" required />
+            </label>
+  
+            <label for="notes"
+              >Notes <textarea id="notes" type="notes"></textarea>
+            </label>
+
+            <button type="submit">Create Cookie</button>
+
+          </form>
+        </section>
+        <section class="cookies">
+          <h2>All Cookies</h2>
+          <ul>
+            <li class="single-cookie">
+                <img src="cookie_image.jpg" alt="Chocolate Chip Cookie" />
+                <p><strong>Cookie Name:</strong> chocolate chip</p>
+                <p><strong>Price:</strong> 16 </p>
+                <p><strong>In Stock:</strong> Yes </p>
+                <p><strong>Contains Nuts:</strong> No </p>
+                <p><strong>Is Vegan:</strong> No </p>
+                <p><strong>Notes:</strong> Classic chocolate chip cookies with a perfect balance of sweet and chocolatey.</p>
+                <button>Remove Cookie</button>
+            </li>
+        </ul>
+    </section>
+</main>
+    
+</body>
+</html>
