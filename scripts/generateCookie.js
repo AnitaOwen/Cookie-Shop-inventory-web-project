@@ -2,17 +2,11 @@ function createListItem(name, price, inStock, containsNuts, isVegan, imageLink, 
     const li = document.createElement("li");
     li.classList.add("single-cookie");
     
-    const removeButton = document.createElement('button')
-    removeButton.textContent = "Remove Cookie"
-    removeButton.addEventListener('click', (event)=>{
-        event.target.closest('.single-cookie').remove()
-    });
-
     if (!imageLink) {
         imageLink = 'https://img.freepik.com/free-vector/love-chocolate-cookies-cartoon-icon-illustration_138676-2705.jpg?size=626&ext=jpg'
     }
     
-    if (name && price && inStock && containsNuts & isVegan) {
+    if (name && price && inStock && containsNuts && isVegan) {
         li.innerHTML = `
         <img src="${imageLink}" alt="Iamge of a cookie">
         <p><strong>Name</strong>: ${name}</p>
@@ -22,15 +16,20 @@ function createListItem(name, price, inStock, containsNuts, isVegan, imageLink, 
         <p><strong>Is Vegan:</strong> ${isVegan}</p>
         <p><strong>Notes:</strong> ${notes ? `${notes}` : `none`}</p>`;
         
-        li.append(removeButton);
     }
+    const removeButton = document.createElement('button')
+    removeButton.textContent = "Remove Cookie"
+    removeButton.addEventListener('click', (event)=>{
+        event.target.closest('.single-cookie').remove()
+    });
+    li.append(removeButton);
     return li;
 }
 
 
 function generateCookie(name, price, inStock, containsNuts, isVegan, imageLink, notes) {
-    const li = createListItem(name, price, inStock, containsNuts, isVegan, imageLink, notes); 
-    const ul = document.querySelector("ul");
-    ul.append(li);
-}
+    const newCookie = createListItem(name.value, price.value, inStock.value, containsNuts.value, isVegan.value, imageLink.value, notes.value); 
+    const cookiesList = document.querySelector(".cookies ul");
+    cookiesList.append(newCookie);
+};
 

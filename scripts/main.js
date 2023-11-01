@@ -12,5 +12,7 @@ form.addEventListener('submit', (event)=>{
         notes
     } = event.target;
 
-    
+generateCookie(name, price, inStock, containsNuts, isVegan, imageLink, notes)
+
+form.reset();
 });
