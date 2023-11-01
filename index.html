@@ -8,7 +8,7 @@
     <script defer src="./scripts/main.js"></script>
 </head>
 <header>
-    <h1>Cookie Shop Inventory <span class="cookie-count">(Cookies: 1)</span></h1>
+    <h1>Cookie Shop Inventory</h1>
 </header>
 <body>
     <main>
@@ -19,59 +19,64 @@
                     <span class="required">*</span>
                     <input id="name" name="name" type="text" required/>
                 </label>
-                <label for="price">Price In Dollars (per dozen)
-                    <input id="price" name="price" type="number" required />
+
+                <label for="price">Price In Dollars (per dozen)*
+                    <input id="price" name="price" type="text" placeholder="0.00" required />
                 </label>
-                <label for="in-stock">In Stock
-                    <input type="radio" id="in-stock-yes" name="in-stock" value="yes" required />
-                    <input type="radio" id="out-of-stock" name="in-stock" value="no" required />
+
+                <label for="in-stock">In Stock?*
+                    <select id="is-vegan" name="is-vegan" required>
+                        <option disabled selected>Select One</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
                 </label>
-                <label for="contains-nuts" >Contains Nuts:
-                    <input type="radio" name="contains-nuts" required/>
-                    No
-                  </label>
-                  <label>
-                    <input type="radio" name="contains-nuts" required />
-                    Yes
-                  </label>
+
+                <label for="contains-nuts">Contains Nuts?*
+                    <select id="contains-nuts" name="contains-nuts" required>
+                        <option disabled selected>Select One</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
                 </label>
-                
-                <label for="is-vegan" >Is Vegan:
-                    <input type="radio" name="is-vegan" required/>
-                    No
-                  </label>
-                  <label>
-                    <input type="radio" name="is-vegan" required />
-                    Yes
-                  </label>
+
+                <label for="is-vegan">Is Vegan?*
+                    <select id="is-vegan" name="is-vegan" required>
+                        <option disabled selected>Select One</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
                 </label>
+
                 <label for="image-link">Image URL
                     <input id="image-link" name="image-link" type="url" />
                 </label>
                 
                 <label for="notes">Notes
-                    <textarea id="notes" type="url"></textarea>
+                    <textarea id="notes" name="notes"></textarea>
                 </label>
                 
                 <button type="submit">Create Cookie</button>
+                <button type="reset">Reset</button>
             </form>
         </section>
         <section class="cookies">
-          <h2>All Cookies</h2>
-          <ul>
-            <li class="single-cookie">
-                <img src="cookie_image.jpg" alt="Chocolate Chip Cookie" />
-                <p><strong>Cookie Name:</strong> chocolate chip</p>
-                <p><strong>Price:</strong> 16 </p>
-                <p><strong>In Stock:</strong> yes </p>
-                <p><strong>Contains Nuts:</strong> no </p>
-                <p><strong>Is Vegan:</strong> no </p>
-                <p><strong>Notes:</strong> Classic chocolate chip cookies with a perfect balance of sweet and chocolatey.</p>
-                <button>Remove Cookie</button>
-            </li>
-        </ul>
-    </section>
-</main>
-    
+            <h2>All Cookies 
+                <span class="cookie-count">(1)</span>
+            </h2>
+            <ul>
+                <li class="single-cookie">
+                    <img src="cookie_image.jpg" alt="Chocolate Chip Cookie" />
+                    <p><strong>Cookie Name:</strong> chocolate chip</p>
+                    <p><strong>Price:</strong> 16 </p>
+                    <p><strong>In Stock:</strong> yes </p>
+                    <p><strong>Contains Nuts:</strong> no </p>
+                    <p><strong>Is Vegan:</strong> no </p>
+                    <p><strong>Notes:</strong> Classic chocolate chip cookies with a perfect balance of sweet and chocolatey.</p>
+                    <button>Remove Cookie</button>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
