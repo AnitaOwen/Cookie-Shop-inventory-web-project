@@ -69,8 +69,6 @@ h2 {
     grid-gap: 10px;
 }
 
-
-
 .new-cookie-form {
     margin-top:18%;
     background-color: rgb(241, 246, 175);
@@ -81,6 +79,7 @@ h2 {
 
 .new-cookie-form label {
     display: block;
+    box-sizing: border-box;
     padding-top: 6px;
     padding-bottom: 6px;
 }
@@ -92,4 +91,12 @@ h2 {
 
 .stock-no {
     background-color: rgb(245, 134, 134);
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    font-size: 10px;
+    margin-left: 15px;
+
 }
