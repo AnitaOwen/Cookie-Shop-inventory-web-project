@@ -56,17 +56,19 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 3fr;
     box-sizing: border-box;
-    border: 4px solid orange;
+    /* border: 4px solid orange; */
     width: 90%;
     margin-left: 5%;
 }
 
 .all-cookies ul {
-    border: 2px solid greenyellow;
+    /* border: 4px solid black; */
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
+
 
 
 .new-cookie-form {

@@ -12,7 +12,7 @@ form.addEventListener('submit', (event)=>{
         notes
     } = event.target;
 
-generateCookie(name, price, inStock, containsNuts, isVegan, imageLink, notes)
+generateCookie(name, price, inStock, containsNuts, isVegan, imageLink, notes);
 
 count++;
 addCount(count);

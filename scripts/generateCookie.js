@@ -11,18 +11,22 @@ function createListItem(name, price, inStock, containsNuts, isVegan, imageLink, 
         <img src="${imageLink}" alt="Iamge of a cookie">
         <p><strong>Name</strong>: ${name}</p>
         <p><strong>Price (per dozen): $</strong>${price}</p>
-        <p><strong>In Stock:</strong><button class="toggle-stock-button">${inStock}</button></p>
+        <p><strong>In Stock: </strong><button class="toggle-stock-button stock-${inStock}">${inStock}</button></p>
         <p><strong>Contains Nuts:</strong> ${containsNuts}</p>
         <p><strong>Is Vegan:</strong> ${isVegan}</p>
         <p><strong>Notes:</strong> ${notes ? `${notes}` : `none`}</p>`;
-        
+
+        const toggleButton = li.querySelector('.toggle-stock-button');
+        toggleButton.addEventListener('click', toggleInStock);
     }
+
     const removeButton = document.createElement('button')
     removeButton.classList.add("remove")
     removeButton.textContent = "Remove Cookie"
     removeButton.addEventListener('click', (event)=>{
         event.target.closest(".single-cookie").remove()
     });
+
     li.append(removeButton);
     return li;
 }
