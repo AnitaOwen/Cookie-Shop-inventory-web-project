@@ -9,94 +9,96 @@
     <script defer src="./scripts/generateCookie.js"></script>
 </head>
 <header>
+    <div class="image-container">
+        <img class="top-image" src="https://images.squarespace-cdn.com/content/v1/559d9ae6e4b07f54795d8c45/1451952277941-4KP8BNVRTVNP3YLV9TAO/photo_top_cookiegroupshot.jpg?format=2500w" alt="Image of a lot of cookies.">
+    </div>
     <h1>Cookie Shop Inventory</h1>
 </header>
 <body>
     <main>
-        <section class="new-cookie-form">
-            <h2>Create a New Cookie</h2>
-            <form id="new-cookie">
-                <label for="name">Cookie Name 
-                    <span class="required">*</span>
-                    <input id="name" name="name" type="text" required/>
-                </label>
-
-                <label for="price">Price In Dollars (per dozen)*
-                    <input id="price" name="price" type="text" placeholder="0.00" required />
-                </label>
-
-                <label for="inStock">In Stock?*
-                    <select id="inStock" name="inStock" required>
-                        <option value="">Select One</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </label>
-
-                <label for="containsNuts">Contains Nuts?*
-                    <select id="containsNuts" name="containsNuts" required>
-                        <option value="">Select One</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </label>
-
-                <label for="isVegan">Is Vegan?*
-                    <select id="isVegan" name="isVegan" required>
-                        <option value="">Select One</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </label>
-
-                <label for="imageLink">Image URL
-                    <input id="imageLink" name="imageLink" type="url" />
-                </label>
-                
-                <label for="notes">Notes
-                    <textarea id="notes" name="notes"></textarea>
-                </label>
-                
-                <button type="submit">Create Cookie</button>
-                <button type="reset">Reset</button>
-            </form>
-        </section>
-        <section class="cookies">
-            <h2>All Cookies 
-                <span class="cookie-count">(1)</span>
-            </h2>
-            <ul>
-                <li class="single-cookie">
-                    <img src="https://media.istockphoto.com/id/157511634/photo/homemade-chocolate-chip-cookie-on-white-overhead-xxxl.jpg?s=612x612&w=0&k=20&c=0sdlLuP-vNNQZguX4AWIHSvUYBFWIJfkYoiwpKMM9zA=" alt="Chocolate Chip Cookie" />
-                    <p><strong>Cookie Name:</strong> chocolate chip</p>
-                    <p><strong>Price:</strong> 16 </p>
-                    <p><strong>In Stock:</strong> yes </p>
-                    <p><strong>Contains Nuts:</strong> no </p>
-                    <p><strong>Is Vegan:</strong> no </p>
-                    <p><strong>Notes:</strong> Classic chocolate chip cookies with a perfect balance of sweet and chocolatey.</p>
-                    <button>Remove Cookie</button>
-                </li>
-                <li class="single-cookie">
-                    <img src="https://media.istockphoto.com/id/157511634/photo/homemade-chocolate-chip-cookie-on-white-overhead-xxxl.jpg?s=612x612&w=0&k=20&c=0sdlLuP-vNNQZguX4AWIHSvUYBFWIJfkYoiwpKMM9zA=" alt="Chocolate Chip Cookie" />
-                    <p><strong>Cookie Name:</strong> chocolate chip</p>
-                    <p><strong>Price:</strong> 16 </p>
-                    <p><strong>In Stock:</strong> yes </p>
-                    <p><strong>Contains Nuts:</strong> no </p>
-                    <p><strong>Is Vegan:</strong> no </p>
-                    <p><strong>Notes:</strong> Classic chocolate chip cookies with a perfect balance of sweet and chocolatey.</p>
-                    <button>Remove Cookie</button>
-                </li>
-                <li class="single-cookie">
-                    <img src="https://img.freepik.com/free-vector/love-chocolate-cookies-cartoon-icon-illustration_138676-2705.jpg?size=626&ext=jpg" alt="Chocolate Chip Cookie" />
-                    <p><strong>Cookie Name:</strong> chocolate chip</p>
-                    <p><strong>Price:</strong> 16 </p>
-                    <p><strong>In Stock:</strong> yes </p>
-                    <p><strong>Contains Nuts:</strong> no </p>
-                    <p><strong>Is Vegan:</strong> no </p>
-                    <p><strong>Notes:</strong> Classic chocolate chip cookies with a perfect balance of sweet and chocolatey.</p>
-                    <button>Remove Cookie</button>
-                </li>
-            </ul>
+        <section class="main-container">
+            <section class="new-cookie-form">
+                <h2>Create a New Cookie</h2>
+                <form id="new-cookie">
+                    <label for="name">Cookie Name 
+                        <span class="required">*</span>
+                        <input id="name" name="name" type="text" required/>
+                    </label>
+    
+                    <label for="price">Price In Dollars (per dozen)*
+                        <input id="price" name="price" type="text" placeholder="0.00" required />
+                    </label>
+    
+                    <label for="inStock">In Stock?*
+                        <select id="inStock" name="inStock" required>
+                            <option value="">Select One</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            </select>
+                        </label>
+    
+                    <label for="containsNuts">Contains Nuts?*
+                        <select id="containsNuts" name="containsNuts" required>
+                            <option value="">Select One</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            </select>
+                        </label>
+    
+                    <label for="isVegan">Is Vegan?*
+                        <select id="isVegan" name="isVegan" required>
+                            <option value="">Select One</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            </select>
+                        </label>
+    
+                    <label for="imageLink">Image URL
+                        <input id="imageLink" name="imageLink" type="url" />
+                    </label>
+                        
+                    <label for="notes">Notes
+                            <textarea id="notes" name="notes"></textarea>
+                        </label>
+                    <button type="submit">Create Cookie</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+            <section class="all-cookies">
+                <h2>All Cookies<span>(3)</span></h2>
+                <ul>
+                    <li class="single-cookie">
+                        <img src="https://media.istockphoto.com/id/157511634/photo/homemade-chocolate-chip-cookie-on-white-overhead-xxxl.jpg?s=612x612&w=0&k=20&c=0sdlLuP-vNNQZguX4AWIHSvUYBFWIJfkYoiwpKMM9zA=" alt="Chocolate Chip Cookie" />
+                        <p><strong>Cookie Name:</strong> chocolate chip</p>
+                        <p><strong>Price:</strong> 16 </p>
+                        <p><strong>In Stock:</strong> yes </p>
+                        <p><strong>Contains Nuts:</strong> no </p>
+                        <p><strong>Is Vegan:</strong> no </p>
+                        <p><strong>Notes:</strong> Classic chocolate chip cookies with a perfect balance of sweet and chocolatey.</p>
+                        <button>Remove Cookie</button>
+                    </li>
+                    <li class="single-cookie">
+                        <img src="https://media.istockphoto.com/id/157511634/photo/homemade-chocolate-chip-cookie-on-white-overhead-xxxl.jpg?s=612x612&w=0&k=20&c=0sdlLuP-vNNQZguX4AWIHSvUYBFWIJfkYoiwpKMM9zA=" alt="Chocolate Chip Cookie" />
+                        <p><strong>Cookie Name:</strong> snickerdoodle</p>
+                        <p><strong>Price:</strong> 14 </p>
+                        <p><strong>In Stock:</strong> no </p>
+                        <p><strong>Contains Nuts:</strong> no </p>
+                        <p><strong>Is Vegan:</strong> no </p>
+                        <p><strong>Notes:</strong> Soft and buttery cinnamon-sugar cookies with a hint of spice.</p>
+                        <button>Remove Cookie</button>
+                    </li>
+                    <li class="single-cookie">
+                        <img src="https://img.freepik.com/free-vector/love-chocolate-cookies-cartoon-icon-illustration_138676-2705.jpg?size=626&ext=jpg" alt="Chocolate Chip Cookie" />
+                        <p><strong>Cookie Name:</strong> oatmeal raisin</p>
+                        <p><strong>Price:</strong> 13 </p>
+                        <p><strong>In Stock:</strong> yes </p>
+                        <p><strong>Contains Nuts:</strong> yes </p>
+                        <p><strong>Is Vegan:</strong> no </p>
+                        <p><strong>Notes:</strong> Chewy oatmeal cookies with plump raisins for a delightful texture and flavor.</p>
+                        <button>Remove Cookie</button>
+                    </li>
+                </ul>
+            </section>
         </section>
     </main>
 </body>

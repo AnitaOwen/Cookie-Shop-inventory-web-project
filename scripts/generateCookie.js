@@ -3,7 +3,7 @@ function createListItem(name, price, inStock, containsNuts, isVegan, imageLink, 
     li.classList.add("single-cookie");
     
     if (!imageLink) {
-        imageLink = 'https://img.freepik.com/free-vector/love-chocolate-cookies-cartoon-icon-illustration_138676-2705.jpg?size=626&ext=jpg'
+        imageLink = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZA6UmOs6ASilBj61Rf-I_4Tq4WCA5nSqg3Q&usqp=CAU'
     }
     
     if (name && price && inStock && containsNuts && isVegan) {
@@ -32,4 +32,12 @@ function generateCookie(name, price, inStock, containsNuts, isVegan, imageLink, 
     const cookiesList = document.querySelector(".cookies ul");
     cookiesList.append(newCookie);
 };
+
+const listItems = document.querySelectorAll('li button');
+
+for(let item of listItems){
+    item.addEventListener('click', (event)=>{
+      event.target.closest('.single-contact').remove();
+    })
+  };
 

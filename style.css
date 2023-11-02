@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
 html,
 body {
   color: #46494c;
@@ -7,18 +8,24 @@ body {
 }
 
 header {
-    background: #4694b8;
-    border: solid #010509;
-    color: #f7f7f7;
+    border-bottom: 2px solid rgb(104, 16, 172);
+    background-color: rgb(168, 219, 220);
 }
 
-/* section {
-    display: grid;
-    grid-template-columns: 2, 1fr;
-    box-sizing: border-box;
-} */
-
 header h1 {
+    font-family: "Griffy";
+    text-align: center;
+    font-size: 55px;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    /* background-color: lightpink; */
+}
+
+li {
+    border: 2px solid blue;
+}
+
+h2 {
     text-align: center;
 }
 
@@ -26,29 +33,32 @@ li img {
     height: 90px;
 }
 
-.new-cookie-form label {
-  box-sizing: border-box;
-  display: block;
-  margin: 5px 0;
-  width: 50%;
+.image-container {
+    width: 0 auto; 
+    overflow: hidden; 
+    height: 255px;
 }
 
-
-.new-cookie-form {
-    border:2px solid #a80505;
-    border-radius: 5px;
-    width: 40%;
+.top-image {
+    width: 100%; 
+    height: auto;
 }
 
-.cookies ul {
+.main-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 3fr;
+    box-sizing: border-box;
+}
+
+.all-cookies ul {
+    border: 2px solid greenyellow;
     list-style: none;
 }
 
-.cookies li {
-    border: 2px solid green;
+.new-cookie-form label {
+    display: block;
 }
 
-
-
+.new-cookie-form {
+    border: 2px solid red;
+}
