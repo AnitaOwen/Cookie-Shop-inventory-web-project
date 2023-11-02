@@ -29,15 +29,18 @@ function createListItem(name, price, inStock, containsNuts, isVegan, imageLink, 
 
 function generateCookie(name, price, inStock, containsNuts, isVegan, imageLink, notes) {
     const newCookie = createListItem(name.value, price.value, inStock.value, containsNuts.value, isVegan.value, imageLink.value, notes.value); 
-    const cookiesList = document.querySelector(".cookies ul");
+    const cookiesList = document.querySelector(".all-cookies ul");
     cookiesList.append(newCookie);
 };
 
 const listItems = document.querySelectorAll('li button');
 
-for(let item of listItems){
-    item.addEventListener('click', (event)=>{
-      event.target.closest('.single-contact').remove();
+listItems.forEach((button) => {
+    button.addEventListener('click', (event)=>{
+        event.target.closest('.single-cookie').remove();
+        decrementCount();
     })
-  };
+})
+
+
 

@@ -14,5 +14,8 @@ form.addEventListener('submit', (event)=>{
 
 generateCookie(name, price, inStock, containsNuts, isVegan, imageLink, notes)
 
+count++;
+addCount(count);
+
 form.reset();
 });
