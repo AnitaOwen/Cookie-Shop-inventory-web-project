@@ -9,7 +9,7 @@ body {
 
 header {
     border-bottom: 2px solid rgb(104, 16, 172);
-    background-color: rgb(168, 219, 220);
+    background-color: rgb(248, 196, 232);
 }
 
 header h1 {
@@ -48,17 +48,26 @@ li img {
     display: grid;
     grid-template-columns: 1fr 3fr;
     box-sizing: border-box;
+    border: 4px solid orange;
+    width: 88%;
+    margin-left: 6%;
 }
 
 .all-cookies ul {
     border: 2px solid greenyellow;
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.new-cookie-form label {
-    display: block;
+li img {
+    text-align: center;
 }
 
 .new-cookie-form {
     border: 2px solid red;
+}
+
+.new-cookie-form label {
+    display: block;
 }
