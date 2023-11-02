@@ -10,7 +10,7 @@ function createListItem(name, price, inStock, containsNuts, isVegan, imageLink, 
         li.innerHTML = `
         <img src="${imageLink}" alt="Iamge of a cookie">
         <p><strong>Name</strong>: ${name}</p>
-        <p><strong>Price:</strong></strong> ${price}</p>
+        <p><strong>Price (per dozen): $</strong>${price}</p>
         <p><strong>In Stock:</strong> ${inStock}</p>
         <p><strong>Contains Nuts:</strong> ${containsNuts}</p>
         <p><strong>Is Vegan:</strong> ${isVegan}</p>
