@@ -14,7 +14,7 @@ Welcome to the Cookie Shop Application, a simple tool for managing your cookie i
 <img src="screenshots/create-cookie-form-large.png" height="150" alt="Screenshot of the create cookies form.">
 <img src="screenshots/create-cookie-form-small.png" height="125" alt="Screenshot of the create cookies form.">
 
-> Located at the top of the page for browsers less than 880px. 
+> Located at the top of the screen for browsers less than 880px. 
 
 
 
