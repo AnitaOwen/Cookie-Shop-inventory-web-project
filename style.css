@@ -71,7 +71,7 @@ h2 {
 
 .new-cookie-form {
     margin-top: 66px;
-    background-color: rgb(241, 246, 175);
+    background-color: rgb(248, 252, 192);
     border: 3px double rgb(210, 16, 194);
     max-height: 388px;
     border-radius: 10px;
@@ -87,6 +87,12 @@ h2 {
 
 .form-buttons {
     margin: 8px;
+}
+
+.form-buttons button {
+    border-color: rgb(249, 141, 159);
+    background-color: rgb(250, 195, 205);
+    border-radius:4px;
 }
 
 .new-cookie-form h2 {
