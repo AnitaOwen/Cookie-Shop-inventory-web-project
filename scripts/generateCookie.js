@@ -25,6 +25,7 @@ function createListItem(name, price, inStock, containsNuts, isVegan, imageLink, 
     removeButton.textContent = "Remove Cookie"
     removeButton.addEventListener('click', (event)=>{
         event.target.closest(".single-cookie").remove()
+        decrementCount();
     });
 
     li.append(removeButton);
