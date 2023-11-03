@@ -10,7 +10,7 @@ body {
 
 header {
     border-bottom: 2px solid rgba(8, 0, 0, 0.992);
-    background-color: rgba(41, 234, 218, 0.73);
+    background-color: rgba(92, 243, 243, 0.772);;
 }
 
 header h1 {
@@ -43,7 +43,7 @@ h2 {
 .image-container {
     width: 0 auto; 
     overflow: hidden; 
-    height: 255px;
+    height: 240px;
 }
 
 .top-image {
@@ -122,9 +122,8 @@ h2 {
 footer {
     position: sticky;
     bottom: 0;
-    font-size: 10px;
-    margin-left: 15px;
-
+    font-size: 13px;
+    padding-left: 15px;
 }
 
 @media (max-width: 1077px) {
@@ -133,6 +132,9 @@ footer {
     }
     h2 {
         font-size: 18px;
+    }
+    footer {
+        background-color: rgb(92, 243, 243);
     }
 
     input, textarea {
@@ -173,6 +175,9 @@ footer {
         display: block;
         width: 70%;
     }
+    footer {
+        background-color: rgb(92, 243, 243);
+    }
     .main-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -197,11 +202,22 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 9px;
         padding-left: 8px;
-        padding-right: 8px;
-        
+        padding-right: 8px;   
     }
     .image-container {
         height: 160px;
     }
    
+}
+
+@media (max-width: 650px) {
+    .all-cookies ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    .remove {
+        margin: 8px;;
+    }
+    footer {
+        background-color: rgb(92, 243, 243);
+    }
 }
