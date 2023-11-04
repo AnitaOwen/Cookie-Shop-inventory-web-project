@@ -3,10 +3,13 @@
 
 # Cookie Shop Inventory Web Application  
 
-Welcome to the Cookie Shop Application, a simple tool for managing your cookie inventory. This application provides features for users to create, view, and delete items in your inventory.
+Welcome to the Cookie Shop Inventory Web Application, a simple tool for managing your cookie inventory. This application provides features for users to create, view, and delete items in your inventory.
+
+## Application Setup
+- Fork and clone this repository.
 
 
-## Features <img src="https://media.tenor.com/dY8ZlGuoD0QAAAAj/angel-angel-cookie.gif" width="38" height="38">
+## Features
 
 ### Create A Cookie
 A user can create an inventory item using the 'Create a New Cookie' form located on the left side of the page.

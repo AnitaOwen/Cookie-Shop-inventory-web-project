@@ -40,6 +40,12 @@ h2 {
     text-align: center;
 }
 
+footer {
+    position: sticky;
+    bottom: 0;
+    font-size: 13px;
+    padding-left: 15px;
+}
 .image-container {
     width: 0 auto; 
     overflow: hidden; 
@@ -95,6 +101,10 @@ h2 {
     border-color: rgb(249, 141, 159);
     background-color: rgb(250, 195, 205);
     border-radius:4px;
+    transition: background-color 0.6s ease;
+}
+.form-buttons button:hover {
+    background-color: rgb(185, 246, 185);
 }
 
 .new-cookie-form h2 {
@@ -106,24 +116,26 @@ h2 {
     border-radius: 6px;
     width: 60px;
     border-color: green;
+    transition: background-color 0.4s ease;
 }
-
+.stock-yes:hover {
+    color: green;
+}
 .stock-no {
-    background-color: rgb(245, 134, 134);
+    background-color: rgb(252, 141, 141);
     border-radius: 6px;
     width: 60px;
     border-color: red;
+    transition: background-color 0.4s ease;
+}
+.stock-no:hover{
+    /* background-color: rgb(248, 207, 207); */
+    color: red
 }
 .remove {
     margin-left: 8px;
     margin-bottom: 8px;
     color: rgb(247, 52, 52)
-}
-footer {
-    position: sticky;
-    bottom: 0;
-    font-size: 13px;
-    padding-left: 15px;
 }
 
 @media (max-width: 1077px) {
@@ -136,7 +148,6 @@ footer {
     footer {
         background-color: rgb(92, 243, 243);
     }
-
     input, textarea {
         display: block;
     }
