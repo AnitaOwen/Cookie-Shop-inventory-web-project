@@ -3,7 +3,7 @@
 
 # Cookie Shop Inventory Web Application  
 
-Welcome to the Cookie Shop Inventory Web Application, a user-friendly tool for managing your cookie inventory. This application provides features for users to create, view, and delete items in your inventory.
+Welcome to the Cookie Shop Inventory Web Application, a user-friendly tool for managing your cookie inventory. This application provides features for users to create, add, view and delete items in their inventory.
 
 [Explore the Cookie Shop Inventory Web Application](https://anitaowen.github.io/Cookie-Shop-inventory-web-project/)
 
