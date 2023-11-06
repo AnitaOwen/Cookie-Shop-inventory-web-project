@@ -91,8 +91,8 @@ footer:hover {
 .new-cookie-form label {
     display: block;
     box-sizing: border-box;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     margin-left: 6px;
 }
 .new-cookie-form h2 {
@@ -100,7 +100,7 @@ footer:hover {
 }
 
 .form-buttons {
-    margin: 8px;
+    margin-left: 8px;
 }
 
 .form-buttons button {
@@ -142,6 +142,20 @@ footer:hover {
     margin-bottom: 8px;
     color: rgb(247, 52, 52)
 }
+#name, 
+#notes,
+#imageLink {
+    /* margin-right: 6px; */
+    display: block;
+    margin-top: 3px;
+    width: 90%
+}
+#price {
+    width: 22%;
+    margin-top: 3px;
+    display: block;
+}
+
 
 @media (max-width: 1077px) {
     header h1 {

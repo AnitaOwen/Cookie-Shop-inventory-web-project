@@ -9,7 +9,7 @@ function createListItem(name, price, inStock, containsNuts, isVegan, imageLink, 
     if (name && price && inStock && containsNuts && isVegan) {
         li.innerHTML = `
         <img src="${imageLink}" alt="Iamge of a cookie">
-        <p><strong>Cookie Name</strong>: ${name}</p>
+        <p><strong>Name</strong>: ${name}</p>
         <p><strong>Price (per dozen): $</strong>${price}</p>
         <p><strong>In Stock: </strong><button class="toggle-stock-button stock-${inStock}">${inStock}</button></p>
         <p><strong>Contains Nuts:</strong> ${containsNuts}</p>
