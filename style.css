@@ -217,7 +217,7 @@ footer:hover {
     }
     .new-cookie-form label {
         display: block;
-        padding-left: 21%;
+        padding-left: 40px;
     }
     
     .form-buttons {
@@ -239,13 +239,15 @@ footer:hover {
 }
 
 @media (max-width: 650px) {
+    footer {
+        background-color: rgb(92, 243, 243);
+    }
     .all-cookies ul {
         grid-template-columns: 1fr 1fr;
     }
     .remove {
         margin: 8px;;
     }
-    footer {
-        background-color: rgb(92, 243, 243);
-    }
+    
+
 }
